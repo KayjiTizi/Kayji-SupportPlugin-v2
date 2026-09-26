@@ -1,0 +1,24 @@
+support:
+  webhook-url: "https://discord.com/api/webhooks/your_webhook_id/your_webhook_token"
+  notify-console: true
+  date-format: "dd/MM/yyyy HH:mm:ss"
+
+messages:
+  no-permission: "&cBạn không có quyền thực hiện lệnh này."
+  usage-support: "&eSử dụng: &7/support <nội dung vấn đề>"
+  support-received: "&aYêu cầu của bạn đã được gửi. ID: &e{id}&a"
+  support-no-found: "&cKhông tìm thấy yêu cầu với ID đó."
+  support-status: "&eYêu cầu {id} &f- &7{status}"
+  reload-success: "&aĐã tải lại cấu hình thành công."
+  reload-fail: "&cTải lại cấu hình thất bại: {error}"
+
+database:
+  type: sqlite
+  sqlite:
+    file: "data/support.db"
+  mysql:
+    host: "localhost"
+    port: 3306
+    database: "supportdb"
+    user: "root"
+    password: "password"

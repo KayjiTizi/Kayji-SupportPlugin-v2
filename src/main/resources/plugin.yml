@@ -1,0 +1,32 @@
+name: Kayji-Support-v2
+main: com.aefamily.support.SupportPlugin
+version: 1.1
+api-version: 1.16
+author: Kayji_Tizi
+commands:
+  support:
+    description: Gửi yêu cầu hỗ trợ
+    usage: /support <message>
+  supportstatus:
+    description: Xem trạng thái yêu cầu
+    usage: /supportstatus <id>
+  supportreload:
+    description: Tải lại cấu hình plugin
+    usage: /supportreload
+  supportgui:
+    description: Mở GUI quản lý support (staff)
+    usage: /supportgui
+  supportupdate:
+    description: Cập nhật trạng thái yêu cầu hỗ trợ
+    usage: /support update <id> <status>
+permissions:
+  supportplugin.use:
+    default: true
+  supportplugin.reload:
+    default: op
+  supportplugin.manage:
+    description: Cho phép mở GUI quản lý support
+    default: op
+  supportplugin.admin:
+    description: Cho phép cập nhật trạng thái hỗ trợ
+    default: op
